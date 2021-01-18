@@ -1,0 +1,92 @@
+<html><body>
+
+
+
+<center><table border="1" cellspacing="0" cellpadding="5" style="text-align:center; margin-top:20px; max-width:40%;">
+
+
+
+<form action="simulation.php" method="post">
+
+
+
+   <tr><td>Total number of samples</td><td><input type="text" name="samples" value="200"/></td></tr>
+
+
+
+   <tr><td>Min number of new requests per second</td><td><input type="text" name="minNew" value="10"/></td></tr>
+
+
+
+   <tr><td>Max number of new requests per second</td><td><input type="text" name="maxNew" value="10"/></td></tr>
+
+
+
+   <!-- <tr><td>Probability of being assigned to server 1 [%]</td><td><input type="text" name="prob1" value="75"/></td></tr>
+
+-->
+
+   <tr><td>Min number of requests served server 1 per second</td><td><input type="text" name="minOut1" value="2"/></td></tr>
+
+
+
+   <tr><td>Max number of requests served server 1 per second</td><td><input type="text" name="maxOut1" value="2"/></td></tr>
+
+
+
+   <tr><td>Min number of requests served server 2 per second</td><td><input type="text" name="minOut2" value="2"/></td></tr>
+
+
+
+   <tr><td>Max number of requests served server 2 per second</td><td><input type="text" name="maxOut2" value="2"/></td></tr>
+
+
+
+  <!-- <tr><td>Max num of requests per container (with no extra delay)</td><td><input type="text" name="reqCont" value="50"/></td></tr>
+
+-->
+
+   <tr><td>Mininum request service time</td><td><input type="text" name="minTime" value="0.20"/></td></tr>
+
+
+
+   <tr><td>Maximum request service time</td><td><input type="text" name="maxTime" value="0.20"/></td></tr>
+
+
+
+   <tr><td>Time to deploy new container [samples]</td><td><input type="text" name="deployTime" value="15"/></td></tr>
+
+
+
+   <tr><td>Initial number of container for server 1</td><td><input type="text" name="cont1" value="1"/></td></tr>
+
+
+
+   <tr><td>Initial number of container for server 2</td><td><input type="text" name="cont2" value="1"/></td></tr>
+
+
+
+   <tr><td>CPU utilization trigger for autoscaling(% usage)</td><td><input type="text" name="cpu" value="80"/></td></tr>
+
+
+
+   <tr><td>Initial CPU Usage(%) for server 1</td><td><input type="text" name="cpu_init_1" value="30"/></td></tr>
+
+
+
+   <tr><td>Initial CPU Usage(%) for server 2</td><td><input type="text" name="cpu_init_2" value="30"/></td></tr>
+
+
+
+   <tr><td colspan="2"><input type="submit"/></td></tr>
+
+
+
+</form>
+
+
+
+</table></center>
+
+</body></html>
+
